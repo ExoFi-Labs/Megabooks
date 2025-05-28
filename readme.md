@@ -11,15 +11,18 @@ A desktop application built with Python and Tkinter to help users create and man
     *   Reset business details to default.
     *   Tooltips for guidance on input fields.
     *   Basic email and phone number validation.
+    *   Country-specific tax settings (GST, VAT, Sales Tax) with automatic currency symbol and tax rate updates.
 *   **Client & Prospect Management:**
     *   Add, edit, and delete clients and prospects.
     *   Maintain separate lists for active clients and potential prospects.
     *   Convert prospects to clients with a single click.
     *   Quickly populate client details when creating new invoices/quotes.
+    *   Advanced searchable combobox for client selection with keyboard navigation.
 *   **Item Library Management:**
     *   Create a library of reusable items or services.
     *   Store item ID (auto-generated), name, description, and price (excluding GST).
     *   Add, edit, and delete items from the library.
+    *   Quick item search and selection with keyboard navigation.
 *   **Invoice Generation:**
     *   Select clients from the managed list.
     *   Add items from the library or create new items on-the-fly for the current invoice.
@@ -28,24 +31,35 @@ A desktop application built with Python and Tkinter to help users create and man
     *   Option to include/exclude GST (10%) on invoices.
     *   Automatic calculation of subtotal, GST, and total amount.
     *   Generate professional PDF invoices.
+    *   Country-specific tax calculations and currency formatting.
 *   **Quote Generation:**
     *   Select clients or prospects.
     *   Functionality similar to invoice generation for creating quotes.
     *   Add items from the library or create new items on-the-fly.
     *   Generate professional PDF quotes.
+    *   Country-specific tax calculations and currency formatting.
 *   **History:**
-    *   View a list of generated invoices and quotes (currently basic, with placeholder data).
+    *   View a list of generated invoices and quotes.
     *   Open generated PDF documents directly from the history (platform-dependent).
+    *   Persistent storage of document history.
 *   **User Interface:**
     *   Modern look and feel with `ttk` themed widgets.
     *   Tabbed interface for easy navigation between sections.
     *   Responsive window sizing.
+    *   Dark and Light theme support with professional color schemes.
+    *   Improved keyboard navigation throughout the application.
+    *   Searchable dropdowns with filtering capabilities.
 *   **Data Persistence:**
     *   Business details are saved in `business_details.json`.
     *   Client and prospect data is saved in `clients_prospects.json`.
     *   Item library is saved in `items.json`.
-    *   (Invoice/Quote history data structure planned for `data.json`).
+    *   Invoice/Quote history data is saved in `data.json`.
+    *   Application settings are saved in `app_config.json`.
     *   Generated PDFs are saved locally.
+*   **Settings:**
+    *   Theme selection (Dark/Light mode).
+    *   Country-specific tax and currency settings.
+    *   Persistent application preferences.
 
 ## Prerequisites
 
